@@ -1,0 +1,25 @@
+{
+  "name": "subagent-timeout",
+  "description": "agent 框架仓库。Alice 要给 research subagent 加 60 秒超时、超时先返回已有结果；8 分钟后 Bob 要主 agent 汇总时提醒用户哪个 subagent 的结果不完整。设定的前提：现在 subagent 的返回值里没有“结果不完整”这个信号，Alice 的改动会第一次产生它，所以两边需要约定同一个接口",
+  "watch": "两条分属不同的人、不同组件，Router 多半各接一个；看它有没有提到第二条和第一条可能要用同一个接口",
+  "repository": "acme/agent-kit",
+  "chat": "oc_4d2f8a91",
+  "people": {
+    "ou_7a1b2c3d4e5f": "Alice",
+    "ou_3c9e0f6a2b18": "Bob"
+  },
+  "messages": [
+    {
+      "id": "om_f3a91c58",
+      "from": "Alice",
+      "at": "2026-11-05T14:00:00.000Z",
+      "text": "research subagent 有时候会卡好几分钟，给它加一个 60 秒超时，超时就把已经搜到的结果先返回"
+    },
+    {
+      "id": "om_0b6d2e47",
+      "from": "Bob",
+      "at": "2026-11-05T14:08:00.000Z",
+      "text": "主 agent 汇总 subagent 结果的时候，如果某个 subagent 返回的结果不完整，要在最终回复里提醒用户"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "theme-followup",
+  "description": "Alice 要亮色暗色开关，10 秒后没点回复、另发一条补充要求",
+  "watch": "第二条是挂到第一个 ticket，还是另开一个",
+  "repository": "acme/web-app",
+  "chat": "oc_4d2f8a91",
+  "people": {"ou_7a1b2c3d4e5f": "Alice"},
+  "messages": [
+    {"id": "om_a17e5b20", "from": "Alice", "at": "2026-11-05T08:00:00.000Z", "text": "给设置页添加一个亮色暗色开关"},
+    {"id": "om_b38c9d41", "from": "Alice", "at": "2026-11-05T08:00:10.000Z", "text": "另外记得加跟随系统模式，不要只写“亮色”“暗色”两个选项。两个选项用卡片而非dropdown呈现"}
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "preference-storage",
+  "description": "Alice 要亮色暗色开关；6 分钟后 Bob 要把用户偏好从 localStorage 迁到后端。设定的前提：项目里现有偏好都存在 localStorage，新开关的主题偏好也会这样存，所以两件事在偏好存储上有交集。这个前提只在代码里，Router 看不到",
+  "watch": "两条都接成新 ticket 是规则下的预期；看 Router 有没有用 routing note 或 orchestrator_ticket_note 提到两件事可能有关联。没有提醒只说明它没输出提醒，dispatch 本来就不让它在评估之外判断技术范围",
+  "repository": "acme/web-app",
+  "chat": "oc_4d2f8a91",
+  "people": {
+    "ou_7a1b2c3d4e5f": "Alice",
+    "ou_3c9e0f6a2b18": "Bob"
+  },
+  "messages": [
+    {
+      "id": "om_c41d7e02",
+      "from": "Alice",
+      "at": "2026-11-05T10:00:00.000Z",
+      "text": "给设置页添加一个亮色暗色开关"
+    },
+    {
+      "id": "om_d58a3f96",
+      "from": "Bob",
+      "at": "2026-11-05T10:06:00.000Z",
+      "text": "把用户偏好（语言、通知开关这些）从 localStorage 改成存到后端，接口用 /api/preferences，登录后从后端拉取"
+    }
+  ]
+}

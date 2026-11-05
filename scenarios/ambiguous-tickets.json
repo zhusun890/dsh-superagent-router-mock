@@ -1,0 +1,54 @@
+{
+  "name": "ambiguous-tickets",
+  "description": "已有三个进行中的 ticket：主题色抽成 CSS 变量（PR #42 待 review，暗色变量值还没填）、首页图表换新库、设置页亮色暗色开关。Alice 新发一条“暗色模式下首页图表坐标轴看不清”。三个 ticket 都沾边；设定的前提是这个修复要用到暗色变量和新图表库的配置，至少和前两个需要协调",
+  "watch": "“正好只有一个 ticket 对得上”不成立时，Router 是接新单还是挂到某一个；有没有查 ticket 详情；有没有提到相关 ticket",
+  "repository": "acme/web-app",
+  "chat": "oc_4d2f8a91",
+  "people": {
+    "ou_7a1b2c3d4e5f": "Alice",
+    "ou_3c9e0f6a2b18": "Bob",
+    "ou_9d4b7e21c0f3": "Carol"
+  },
+  "tickets": [
+    {
+      "key": "theme-vars",
+      "from": "Carol",
+      "created_at": "2026-11-04T09:00:00.000Z",
+      "thread": "github:40",
+      "request": "把页面里写死的颜色都抽成 CSS 变量，为以后做主题切换做准备",
+      "title": "统一主题配色：把写死的颜色抽成 CSS 变量",
+      "worktree_name": "theme-css-vars",
+      "state": "person/review",
+      "pr_number": 42,
+      "report": "PR #42 已提交：页面颜色都改成了 CSS 变量，暗色主题的变量值还没填，等待 review。"
+    },
+    {
+      "key": "chart-revamp",
+      "from": "Bob",
+      "created_at": "2026-11-05T09:30:00.000Z",
+      "thread": "feishu:oc_4d2f8a91:om_5e2c8a17",
+      "request": "首页的图表换成新的图表库，交互和配色按设计稿来",
+      "title": "首页图表改版：换成新的图表库",
+      "worktree_name": "home-chart-revamp",
+      "state": "working"
+    },
+    {
+      "key": "theme-toggle",
+      "from": "Alice",
+      "created_at": "2026-11-05T10:00:00.000Z",
+      "thread": "feishu:oc_4d2f8a91:om_c41d7e02",
+      "request": "给设置页添加一个亮色暗色开关",
+      "title": "设置页添加亮色/暗色开关",
+      "worktree_name": "settings-theme-toggle",
+      "state": "working"
+    }
+  ],
+  "messages": [
+    {
+      "id": "om_e7b2049c",
+      "from": "Alice",
+      "at": "2026-11-05T10:20:00.000Z",
+      "text": "暗色模式下首页图表的坐标轴文字看不清，改成浅色"
+    }
+  ]
+}

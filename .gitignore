@@ -1,0 +1,6 @@
+runs
+.vscode
+.venv
+.DS_Store
+.idea
+.claude
